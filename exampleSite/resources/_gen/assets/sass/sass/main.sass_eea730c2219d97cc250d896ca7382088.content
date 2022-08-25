@@ -108,6 +108,22 @@ html[data-mode="dim"] .color_choice::after {
   src: local("Cookie-Regular"), url("../fonts/cookie-v10-latin-regular.woff") format("woff2"), url("../fonts/cookie-v10-latin-regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Arame';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local("Arame-Thin"), url("../fonts/Arame-Thin.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Arame';
+  font-style: bold;
+  font-display: swap;
+  font-weight: 500;
+  src: local("Arame-Bold"), url("../fonts/Arame-Bold.ttf") format("ttf");
+}
+
 @keyframes showMenu {
   0% {
     top: -100%;
@@ -672,7 +688,8 @@ aside h3 {
 }
 
 .nav-brand {
-  font-family: "Cookie";
+  font-family: "Arame";
+  font-style: "bold";
   font-size: 2em !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
