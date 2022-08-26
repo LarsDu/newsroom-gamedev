@@ -112,8 +112,16 @@ html[data-mode="dim"] .color_choice::after {
   font-family: 'Arame';
   font-style: normal;
   font-display: swap;
+  font-weight: 300;
+  src: local("Arame-Thin"), url("../fonts/Arame-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Arame';
+  font-style: normal;
+  font-display: swap;
   font-weight: 400;
-  src: local("Arame-Thin"), url("../fonts/Arame-Thin.ttf") format("ttf");
+  src: local("Arame"), url("../fonts/Arame.woff") format("woff");
 }
 
 @font-face {
@@ -121,7 +129,7 @@ html[data-mode="dim"] .color_choice::after {
   font-style: bold;
   font-display: swap;
   font-weight: 500;
-  src: local("Arame-Bold"), url("../fonts/Arame-Bold.ttf") format("ttf");
+  src: local("Arame-Bold"), url("../fonts/Arame-Bold.woff") format("woff");
 }
 
 @keyframes showMenu {
@@ -688,8 +696,9 @@ aside h3 {
 }
 
 .nav-brand {
-  font-family: "Courier New";
+  font-family: "Arame";
   font-style: bold;
+  font-weight: 400;
   font-size: 3em !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
